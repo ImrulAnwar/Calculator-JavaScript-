@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="textinput">
+            <input type="text" name="display" id="textIn" />
+          </div>
+          <div>
+            <button onclick="clearInput(event)">AC</button>
+            <button onclick="deleteLastChar(event)">DE</button>
+            <button onclick="updateInput('.', event)">.</button>
+            <button onclick="updateInput('/', event)">/</button>
+          </div>
+          <div>
+            <button onclick="updateInput('7', event)">7</button>
+            <button onclick="updateInput('8', event)">8</button>
+            <button onclick="updateInput('9', event)">9</button>
+            <button onclick="updateInput('*', event)">*</button>
+          </div>
+          <div>
+            <button onclick="updateInput('4', event)">4</button>
+            <button onclick="updateInput('5', event)">5</button>
+            <button onclick="updateInput('6', event)">6</button>
+            <button onclick="updateInput('-', event)">-</button>
+          </div>
+          <div>
+            <button onclick="updateInput('1', event)">1</button>
+            <button onclick="updateInput('2', event)">2</button>
+            <button onclick="updateInput('3', event)">3</button>
+            <button onclick="updateInput('+', event)">+</button>
+          </div>
+          <div>
+            <button onclick="updateInput('00', event)">00</button>
+            <button onclick="updateInput('0', event)">0</button>
+            <button class="equal" onclick="calculate(event)">=</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
